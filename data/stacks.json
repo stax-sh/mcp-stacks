@@ -1,0 +1,58 @@
+[
+  {
+    "id": "coding-agent",
+    "name": "The Coding Agent Stack",
+    "slug": "coding-agent",
+    "description": "What an AI coding agent needs to ship a feature: source control, current docs, a real browser to test in, and visibility when something breaks in production.",
+    "use_case": "Pair an agent with the tools a working developer touches every hour. Read repos, look up library docs, drive a real browser, and see runtime errors.",
+    "server_ids": [
+      "io.github.github/github-mcp-server",
+      "io.github.upstash/context7",
+      "io.github.ChromeDevTools/chrome-devtools-mcp",
+      "io.github.getsentry/sentry-mcp"
+    ],
+    "rationale_per_server": {
+      "io.github.github/github-mcp-server": "Connects the agent to GitHub itself: read code, manage issues and PRs, query workflow runs. The single highest-leverage server for any code task.",
+      "io.github.upstash/context7": "Up-to-date library docs from official sources. Catches the 'this API changed two versions ago' class of agent failures.",
+      "io.github.ChromeDevTools/chrome-devtools-mcp": "Drives a real Chrome with full DevTools access. Use when the agent needs to actually verify a UI, not just hope the diff looks right.",
+      "io.github.getsentry/sentry-mcp": "Pulls real production errors with stack traces. Closes the loop between 'shipped' and 'still working'."
+    },
+    "combined_install": "npx mcp-remote https://api.githubcopilot.com/mcp/\nnpx -y @upstash/context7-mcp\nnpx -y chrome-devtools-mcp\nnpx -y @sentry/mcp-server"
+  },
+  {
+    "id": "web-researcher",
+    "name": "The Web Researcher Stack",
+    "slug": "web-researcher",
+    "description": "Three servers an agent needs to actually read the web: a search engine, a scraper that handles JS, and a converter that turns whatever it pulls back into clean Markdown.",
+    "use_case": "Build a research agent that searches, scrapes, and digests. Useful for competitive intel, lead research, or feeding fresh sources into a long writeup.",
+    "server_ids": [
+      "io.github.tavily-ai/tavily-mcp",
+      "firecrawl/firecrawl-mcp-server",
+      "microsoft/markitdown"
+    ],
+    "rationale_per_server": {
+      "io.github.tavily-ai/tavily-mcp": "Search built for LLMs, not humans. Returns clean results without ad cruft.",
+      "firecrawl/firecrawl-mcp-server": "Renders JS-heavy pages and returns clean Markdown. The thing you want when basic curl scraping returns an empty shell.",
+      "microsoft/markitdown": "Converts PDFs, Word docs, slides, and images to Markdown. The bridge between 'I found a source' and 'I can quote it'."
+    },
+    "combined_install": "npx -y tavily-mcp\nnpx -y firecrawl-mcp\nuvx markitdown-mcp"
+  },
+  {
+    "id": "data-stack",
+    "name": "The Data Stack",
+    "slug": "data-stack",
+    "description": "An agent that can speak to your data. One Postgres server, one document store, one vector DB. Enough surface to prototype most data workflows without dragging in five admin tools.",
+    "use_case": "Wire an agent to the storage layer of a typical app. Run analytics queries, look up records, or seed a vector store from documents.",
+    "server_ids": [
+      "neondatabase/mcp-server-neon",
+      "io.github.mongodb-js/mongodb-mcp-server",
+      "chroma-core/chroma-mcp"
+    ],
+    "rationale_per_server": {
+      "neondatabase/mcp-server-neon": "Postgres on Neon, including branching and migrations. The serverless-Postgres half of most modern stacks.",
+      "io.github.mongodb-js/mongodb-mcp-server": "Run queries and aggregations against MongoDB Atlas or self-hosted. The document store half.",
+      "chroma-core/chroma-mcp": "Open-source vector database for retrieval. Use it when the agent needs to remember things across sessions."
+    },
+    "combined_install": "npx mcp-remote https://mcp.neon.tech/sse\nnpx -y mongodb-mcp-server\nuvx chroma-mcp"
+  }
+]

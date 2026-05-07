@@ -1,0 +1,1367 @@
+{
+  "generated_at": "2026-05-06T22:52:18Z",
+  "sources": [
+    "https://github.com/mcp"
+  ],
+  "count": 97,
+  "servers": [
+    {
+      "id": "microsoft/markitdown",
+      "name": "Markitdown",
+      "description": "Markitdown converts PDFs, Word docs, Excel sheets, PowerPoint files, images, audio, HTML, and more into Markdown. Useful for getting messy file content into an LLM context window.",
+      "github_url": "https://github.com/microsoft/markitdown",
+      "homepage": null,
+      "install_command": "uvx markitdown-mcp",
+      "stars": 121110,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.github.netdata/mcp-server",
+      "name": "Netdata",
+      "description": "Netdata connects an agent to real-time infrastructure monitoring data: query metrics, investigate active alerts, run root cause analysis using anomaly detection, explore logs, and execute functions against any connected node.",
+      "github_url": "https://github.com/netdata/netdata",
+      "homepage": "https://www.netdata.cloud",
+      "install_command": "npx mcp-remote https://app.netdata.cloud/api/v1/mcp",
+      "stars": 78715,
+      "author": {
+        "name": "netdata",
+        "url": "https://github.com/netdata"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/43390781?v=4"
+    },
+    {
+      "id": "io.github.upstash/context7",
+      "name": "Context7",
+      "description": "Context7 fetches up-to-date documentation and code examples from official sources for over 4,000 libraries, so generated code matches the version actually installed.",
+      "github_url": "https://github.com/upstash/context7",
+      "homepage": "https://context7.com",
+      "install_command": "npx -y @upstash/context7-mcp",
+      "stars": 54604,
+      "author": {
+        "name": "upstash",
+        "url": "https://github.com/upstash"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/74989412?v=4"
+    },
+    {
+      "id": "io.github.ChromeDevTools/chrome-devtools-mcp",
+      "name": "Chrome DevTools MCP",
+      "description": "Chrome DevTools MCP gives AI coding agents direct access to a live Chrome browser: inspect the DOM, capture console logs, run JavaScript, monitor network requests, and debug runtime errors without leaving the agent workflow.",
+      "github_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "homepage": null,
+      "install_command": "npx -y chrome-devtools-mcp",
+      "stars": 38295,
+      "author": {
+        "name": "ChromeDevTools",
+        "url": "https://github.com/ChromeDevTools"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/11260967?v=4"
+    },
+    {
+      "id": "microsoft/playwright-mcp",
+      "name": "Playwright",
+      "description": "Playwright MCP gives an agent full browser automation via structured accessibility snapshots, so it can navigate pages, click, fill forms, and extract data without needing vision models.",
+      "github_url": "https://github.com/microsoft/playwright-mcp",
+      "homepage": null,
+      "install_command": "npx -y @playwright/mcp",
+      "stars": 32091,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.github.github/github-mcp-server",
+      "name": "GitHub",
+      "description": "GitHub MCP Server connects an agent to GitHub: read repos and code, manage issues and PRs, query workflow runs, review Dependabot and security findings, and interact with discussions and notifications.",
+      "github_url": "https://github.com/github/github-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://api.githubcopilot.com/mcp/",
+      "stars": 29550,
+      "author": {
+        "name": "github",
+        "url": "https://github.com/github"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/9919?v=4"
+    },
+    {
+      "id": "oraios/serena",
+      "name": "Serena",
+      "description": "Serena gives coding agents semantic code retrieval and editing capabilities, letting them navigate and modify codebases at the symbol level rather than raw text.",
+      "github_url": "https://github.com/oraios/serena",
+      "homepage": "https://oraios.github.io/serena",
+      "install_command": "uvx serena",
+      "stars": 23894,
+      "author": {
+        "name": "oraios",
+        "url": "https://github.com/oraios"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/181485370?v=4"
+    },
+    {
+      "id": "coplaydev/unity-mcp",
+      "name": "Unity",
+      "description": "Unity MCP connects an AI agent to the Unity Editor, letting it read and modify scenes, manage assets, run scripts, and automate editor workflows through a local bridge server.",
+      "github_url": "https://github.com/CoplayDev/unity-mcp",
+      "homepage": "https://www.coplay.dev",
+      "install_command": "uv {unity_mcp_server_src} run server.py",
+      "stars": 9273,
+      "author": {
+        "name": "CoplayDev",
+        "url": "https://github.com/CoplayDev"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/188132522?v=4"
+    },
+    {
+      "id": "firecrawl/firecrawl-mcp-server",
+      "name": "Firecrawl",
+      "description": "Firecrawl searches the web, scrapes URLs into clean structured data, crawls multi-page sites, and can run autonomous deep-research sessions with a browser agent.",
+      "github_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "homepage": "https://firecrawl.dev",
+      "install_command": "npx -y firecrawl-mcp",
+      "stars": 6229,
+      "author": {
+        "name": "firecrawl",
+        "url": "https://github.com/firecrawl"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/135057108?v=4"
+    },
+    {
+      "id": "io.github.wonderwhy-er/desktop-commander",
+      "name": "Desktop Commander",
+      "description": "Desktop Commander gives an agent full control over a local machine: run terminal commands, manage processes, read and write files (including Excel, PDF, and Word), and search code across directories.",
+      "github_url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "homepage": "https://desktopcommander.app/",
+      "install_command": "npx -y @wonderwhy-er/desktop-commander",
+      "stars": 6002,
+      "author": {
+        "name": "wonderwhy-er",
+        "url": "https://github.com/wonderwhy-er"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1150639?u=a63bab27280afb38b44ceea84590bb8ad9321c92&v=4"
+    },
+    {
+      "id": "makenotion/notion-mcp-server",
+      "name": "Notion",
+      "description": "Notion MCP Server connects an agent to a Notion workspace: search and read pages, create and update content, manage databases, and move pages between locations.",
+      "github_url": "https://github.com/makenotion/notion-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.notion.com/sse",
+      "stars": 4302,
+      "author": {
+        "name": "makenotion",
+        "url": "https://github.com/makenotion"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/4792552?v=4"
+    },
+    {
+      "id": "com.microsoft/azure",
+      "name": "Azure MCP Server",
+      "description": "Azure MCP Server connects an AI agent to Azure services including Storage, Cosmos DB, SQL, Key Vault, Monitor, and more, so agents can query, manage, and operate Azure resources directly.",
+      "github_url": "https://github.com/microsoft/mcp",
+      "homepage": null,
+      "install_command": "npx -y @azure/mcp",
+      "stars": 3100,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "com.microsoft/microsoft-fabric",
+      "name": "Microsoft Fabric MCP Server",
+      "description": "Microsoft Fabric MCP Server gives an agent access to the full OpenAPI specifications, item schemas, and best-practice guidance for all Microsoft Fabric workloads, without connecting to a live environment.",
+      "github_url": "https://github.com/microsoft/mcp",
+      "homepage": null,
+      "install_command": "npx -y @microsoft/fabric-mcp",
+      "stars": 3100,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.github.bytebase/dbhub",
+      "name": "DBHub",
+      "description": "DBHub connects an agent to PostgreSQL, MySQL, MariaDB, SQL Server, and SQLite through a single interface, supporting SQL queries, schema exploration, and simultaneous connections to multiple databases.",
+      "github_url": "https://github.com/bytebase/dbhub",
+      "homepage": "https://dbhub.ai",
+      "install_command": "npx -y @bytebase/dbhub",
+      "stars": 2697,
+      "author": {
+        "name": "bytebase",
+        "url": "https://github.com/bytebase"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/74386897?v=4"
+    },
+    {
+      "id": "com.supabase/mcp",
+      "name": "Supabase",
+      "description": "Supabase MCP connects an agent directly to a Supabase project: query and migrate databases, manage tables and extensions, deploy edge functions, inspect logs, and administer storage and branching.",
+      "github_url": "https://github.com/supabase-community/supabase-mcp",
+      "homepage": "https://supabase.com/mcp",
+      "install_command": "npx mcp-remote https://mcp.supabase.com/mcp",
+      "stars": 2666,
+      "author": {
+        "name": "supabase-community",
+        "url": "https://github.com/supabase-community"
+      },
+      "icon": "https://supabase.com/favicon/favicon-16x16.png"
+    },
+    {
+      "id": "io.github.brightdata/brightdata-mcp",
+      "name": "Brightdata",
+      "description": "Bright Data MCP gives agents access to the live web via a managed scraping network. Agents can search, browse, and extract structured data from any website without being blocked.",
+      "github_url": "https://github.com/brightdata/brightdata-mcp",
+      "homepage": "https://brightdata.com/",
+      "install_command": "npx -y @brightdata/mcp",
+      "stars": 2346,
+      "author": {
+        "name": "brightdata",
+        "url": "https://github.com/brightdata"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/213028976?v=4"
+    },
+    {
+      "id": "io.github.tavily-ai/tavily-mcp",
+      "name": "Tavily",
+      "description": "Tavily connects an agent to real-time web search, page extraction, site mapping, and systematic crawling through the Tavily API.",
+      "github_url": "https://github.com/tavily-ai/tavily-mcp",
+      "homepage": null,
+      "install_command": "npx -y tavily-mcp",
+      "stars": 1917,
+      "author": {
+        "name": "tavily-ai",
+        "url": "https://github.com/tavily-ai"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/170207473?v=4"
+    },
+    {
+      "id": "microsoft/azure-devops-mcp",
+      "name": "Azure DevOps",
+      "description": "Azure DevOps MCP Server connects an agent to Azure DevOps: browse repos, manage work items and iterations, query builds and pipelines, run test plans, and read and write wiki pages.",
+      "github_url": "https://github.com/microsoft/azure-devops-mcp",
+      "homepage": null,
+      "install_command": "npx -y @azure-devops/mcp",
+      "stars": 1657,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "microsoftdocs/mcp",
+      "name": "Microsoft Learn",
+      "description": "Microsoft Learn MCP gives an agent direct access to official Microsoft and Azure documentation, including semantic search across docs, page retrieval, and code sample lookup.",
+      "github_url": "https://github.com/microsoftdocs/mcp",
+      "homepage": "https://learn.microsoft.com",
+      "install_command": "npx mcp-remote https://learn.microsoft.com/api/mcp",
+      "stars": 1612,
+      "author": {
+        "name": "MicrosoftDocs",
+        "url": "https://github.com/MicrosoftDocs"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/22479449?v=4"
+    },
+    {
+      "id": "com.microsoft/nuget",
+      "name": "Microsoft Nuget",
+      "description": "NuGet MCP Server lets an AI agent query NuGet package feeds for real-time package metadata, version history, and dependency information to inform .NET development decisions.",
+      "github_url": "https://github.com/NuGet/Home",
+      "homepage": null,
+      "install_command": "dnx NuGet.Mcp.Server",
+      "stars": 1549,
+      "author": {
+        "name": "NuGet",
+        "url": "https://github.com/NuGet"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/968310?v=4"
+    },
+    {
+      "id": "com.stripe/mcp",
+      "name": "Stripe",
+      "description": "Stripe MCP connects an agent to the Stripe API: manage customers, products, prices, payment intents, subscriptions, and other core billing objects.",
+      "github_url": "https://github.com/stripe/agent-toolkit",
+      "homepage": "https://docs.stripe.com/agents",
+      "install_command": "npx mcp-remote https://mcp.stripe.com",
+      "stars": 1528,
+      "author": {
+        "name": "stripe",
+        "url": "https://github.com/stripe"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/856813?v=4"
+    },
+    {
+      "id": "io.github.hashicorp/terraform-mcp-server",
+      "name": "Terraform",
+      "description": "Terraform MCP Server connects an agent to the Terraform Registry and HCP Terraform, covering provider and module lookups, workspace management, variable configuration, and run operations for Infrastructure as Code workflows.",
+      "github_url": "https://github.com/hashicorp/terraform-mcp-server",
+      "homepage": null,
+      "install_command": "docker run docker.io/hashicorp/terraform-mcp-server:0.5.0",
+      "stars": 1357,
+      "author": {
+        "name": "hashicorp",
+        "url": "https://github.com/hashicorp"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/761456?v=4"
+    },
+    {
+      "id": "com.figma.mcp/mcp",
+      "name": "Figma MCP Server",
+      "description": "Figma MCP Server gives an agent access to Figma design files: extract layout data, variables, and component context from frames, and write native Figma content directly to the canvas.",
+      "github_url": "https://github.com/figma/mcp-server-guide",
+      "homepage": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server",
+      "install_command": "npx mcp-remote https://mcp.figma.com/mcp",
+      "stars": 1350,
+      "author": {
+        "name": "figma",
+        "url": "https://github.com/figma"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/5155369?v=4"
+    },
+    {
+      "id": "com.apify/apify-mcp-server",
+      "name": "Apify",
+      "description": "Apify MCP Server exposes thousands of pre-built web scrapers and automation Actors, letting an agent extract structured data from websites, social platforms, e-commerce stores, and search engines.",
+      "github_url": "https://github.com/apify/apify-mcp-server",
+      "homepage": "https://mcp.apify.com",
+      "install_command": "npx mcp-remote https://mcp.apify.com/",
+      "stars": 1190,
+      "author": {
+        "name": "apify",
+        "url": "https://github.com/apify"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/24586296?v=4"
+    },
+    {
+      "id": "io.github.mongodb-js/mongodb-mcp-server",
+      "name": "Mongodb",
+      "description": "MongoDB MCP Server connects an agent to MongoDB databases and MongoDB Atlas: query collections, inspect schemas, and manage Atlas clusters and resources.",
+      "github_url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "homepage": null,
+      "install_command": "npx -y mongodb-mcp-server",
+      "stars": 1014,
+      "author": {
+        "name": "mongodb-js",
+        "url": "https://github.com/mongodb-js"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/11214950?v=4"
+    },
+    {
+      "id": "antfu/nuxt-mcp",
+      "name": "Nuxt",
+      "description": "Nuxt MCP integrates as a Vite plugin or Nuxt module to expose live app internals to an AI agent during local development, giving it visibility into routes, components, and module state.",
+      "github_url": "https://github.com/antfu/nuxt-mcp",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.nuxt.com/sse",
+      "stars": 907,
+      "author": {
+        "name": "antfu",
+        "url": "https://github.com/antfu"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/11247099?u=5c092d3773a443e480a294f2b67aa39395982f46&v=4"
+    },
+    {
+      "id": "io.github.vercel/next-devtools-mcp",
+      "name": "Vercel Next Dev Tools",
+      "description": "Next.js DevTools MCP connects an agent to a running Next.js 16+ dev server, exposing live route structure, runtime errors, server logs, and version-accurate documentation for migrations and new APIs.",
+      "github_url": "https://github.com/vercel/next-devtools-mcp",
+      "homepage": null,
+      "install_command": "npx -y next-devtools-mcp",
+      "stars": 740,
+      "author": {
+        "name": "vercel",
+        "url": "https://github.com/vercel"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/14985020?v=4"
+    },
+    {
+      "id": "io.github.getsentry/sentry-mcp",
+      "name": "Getsentry Sentry",
+      "description": "Sentry MCP connects an agent to Sentry error monitoring, letting it look up issues, read stack traces, inspect release details, and work through debugging workflows without leaving the coding environment.",
+      "github_url": "https://github.com/getsentry/sentry-mcp",
+      "homepage": "https://mcp.sentry.dev",
+      "install_command": "npx -y @sentry/mcp-server",
+      "stars": 677,
+      "author": {
+        "name": "getsentry",
+        "url": "https://github.com/getsentry"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1396951?v=4"
+    },
+    {
+      "id": "elastic/mcp-server-elasticsearch",
+      "name": "Elasticsearch",
+      "description": "Elasticsearch MCP Server connects an agent to an Elasticsearch cluster so it can run search queries, inspect index mappings, execute ES|QL statements, and explore shard information using natural language.",
+      "github_url": "https://github.com/elastic/mcp-server-elasticsearch",
+      "homepage": "https://www.elastic.co/elasticsearch",
+      "install_command": "docker run docker.elastic.co/mcp/elasticsearch",
+      "stars": 653,
+      "author": {
+        "name": "elastic",
+        "url": "https://github.com/elastic"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6764390?v=4"
+    },
+    {
+      "id": "com.atlassian/atlassian-mcp-server",
+      "name": "Atlassian",
+      "description": "Atlassian Rovo MCP Server connects an agent to Jira, Confluence, and Compass: search and summarize content, create and update issues and pages, automate ticket generation, and navigate project dependencies.",
+      "github_url": "https://github.com/atlassian/atlassian-mcp-server",
+      "homepage": "https://www.atlassian.com/platform/remote-mcp-server",
+      "install_command": "npx mcp-remote https://mcp.atlassian.com/v1/mcp",
+      "stars": 652,
+      "author": {
+        "name": "atlassian",
+        "url": "https://github.com/atlassian"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/168166?v=4"
+    },
+    {
+      "id": "neondatabase/mcp-server-neon",
+      "name": "Neon",
+      "description": "Neon MCP Server connects an agent to Neon Postgres: create and manage projects and branches, run SQL queries, apply schema migrations, and administer databases through natural language.",
+      "github_url": "https://github.com/neondatabase/mcp-server-neon",
+      "homepage": "https://mcp-server-neon-jet.vercel.app",
+      "install_command": "npx mcp-remote https://mcp.neon.tech/sse",
+      "stars": 594,
+      "author": {
+        "name": "neondatabase",
+        "url": "https://github.com/neondatabase"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/77690634?v=4"
+    },
+    {
+      "id": "io.github.SonarSource/sonarqube-mcp-server",
+      "name": "SonarSource Sonarqube",
+      "description": "SonarQube MCP Server connects an agent to SonarQube Server or SonarQube Cloud, letting it query code quality findings, security hotspots, and analysis results for a project.",
+      "github_url": "https://github.com/SonarSource/sonarqube-mcp-server",
+      "homepage": "https://www.sonarsource.com/products/sonarqube/mcp-server/",
+      "install_command": "docker run docker.io/mcp/sonarqube:latest",
+      "stars": 546,
+      "author": {
+        "name": "SonarSource",
+        "url": "https://github.com/SonarSource"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/545988?v=4"
+    },
+    {
+      "id": "chroma-core/chroma-mcp",
+      "name": "Chroma",
+      "description": "Chroma MCP gives an agent a persistent vector database: create and manage document collections, add content, and retrieve results via semantic search, full-text search, or metadata filters.",
+      "github_url": "https://github.com/chroma-core/chroma-mcp",
+      "homepage": null,
+      "install_command": "uvx chroma-mcp",
+      "stars": 542,
+      "author": {
+        "name": "chroma-core",
+        "url": "https://github.com/chroma-core"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/105881770?v=4"
+    },
+    {
+      "id": "doist/todoist-ai",
+      "name": "Todoist",
+      "description": "Todoist AI connects an agent to a Todoist account, covering task lookup, creation, and management. Tools can also be imported directly into other AI interfaces outside of the MCP protocol.",
+      "github_url": "https://github.com/Doist/todoist-ai",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://ai.todoist.net/mcp",
+      "stars": 476,
+      "author": {
+        "name": "Doist",
+        "url": "https://github.com/Doist"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/2565372?v=4"
+    },
+    {
+      "id": "com.monday/monday.com",
+      "name": "Monday",
+      "description": "Monday.com MCP connects an agent to a monday.com workspace: read and update boards, create and track items, manage workflows, and query project data across the work OS.",
+      "github_url": "https://github.com/mondaycom/mcp",
+      "homepage": "https://monday.com",
+      "install_command": "npx mcp-remote https://mcp.monday.com/mcp",
+      "stars": 399,
+      "author": {
+        "name": "mondaycom",
+        "url": "https://github.com/mondaycom"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/61420283?v=4"
+    },
+    {
+      "id": "io.github.mapbox/mcp-server",
+      "name": "Mapbox",
+      "description": "Mapbox MCP Server gives an agent access to Mapbox location services: forward and reverse geocoding, point-of-interest search, turn-by-turn directions, isochrones, and map tile data.",
+      "github_url": "https://github.com/mapbox/mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.mapbox.com/mcp",
+      "stars": 338,
+      "author": {
+        "name": "mapbox",
+        "url": "https://github.com/mapbox"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/600935?v=4"
+    },
+    {
+      "id": "sunriseapps/imagesorcery-mcp",
+      "name": "Imagesorcery",
+      "description": "ImageSorcery processes local images without sending them to external servers: crop, resize, rotate, blur, draw shapes and text, remove backgrounds, detect objects, and extract text via OCR.",
+      "github_url": "https://github.com/sunriseapps/imagesorcery-mcp",
+      "homepage": "https://imagesorcery.net",
+      "install_command": "imagesorcery-mcp",
+      "stars": 308,
+      "author": {
+        "name": "sunriseapps",
+        "url": "https://github.com/sunriseapps"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/211119887?v=4"
+    },
+    {
+      "id": "azure-ai-foundry/mcp-foundry",
+      "name": "Azure AI Foundry",
+      "description": "Azure AI Foundry MCP Server connects an agent to Azure AI Foundry: browse the model catalog, manage deployments, query and index AI Search knowledge bases, run evaluations, and interact with Azure AI agents.",
+      "github_url": "https://github.com/azure-ai-foundry/mcp-foundry",
+      "homepage": "https://learn.microsoft.com/azure/ai-foundry/mcp/get-started?view=foundry&tabs=user",
+      "install_command": "uvx run-azure-ai-foundry-mcp",
+      "stars": 244,
+      "author": {
+        "name": "microsoft-foundry",
+        "url": "https://github.com/microsoft-foundry"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/202016865?v=4"
+    },
+    {
+      "id": "dev.svelte/mcp",
+      "name": "Svelte MCP",
+      "description": "Svelte MCP is the official server for Svelte development, giving agents access to Svelte documentation and autofix tooling to catch and correct Svelte-specific code issues.",
+      "github_url": "https://github.com/sveltejs/ai-tools",
+      "homepage": "https://mcp.svelte.dev",
+      "install_command": "npx mcp-remote https://mcp.svelte.dev/mcp",
+      "stars": 242,
+      "author": {
+        "name": "sveltejs",
+        "url": "https://github.com/sveltejs"
+      },
+      "icon": "https://mcp.svelte.dev/logo.svg"
+    },
+    {
+      "id": "com.postman/postman-mcp-server",
+      "name": "Postman",
+      "description": "Postman MCP Server connects an agent to Postman workspaces, letting it read and manage API collections, environments, and test results, and trigger workflow automation through the Postman API.",
+      "github_url": "https://github.com/postmanlabs/postman-mcp-server",
+      "homepage": "https://www.postman.com/product/mcp-server/",
+      "install_command": "npx mcp-remote https://mcp.postman.com/mcp",
+      "stars": 233,
+      "author": {
+        "name": "postmanlabs",
+        "url": "https://github.com/postmanlabs"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/10251060?v=4"
+    },
+    {
+      "id": "huggingface/hf-mcp-server",
+      "name": "Hugging Face",
+      "description": "Hugging Face MCP Server connects an agent to the Hub: search models, datasets, Spaces, papers, and collections, and interact with thousands of Gradio AI applications.",
+      "github_url": "https://github.com/huggingface/hf-mcp-server",
+      "homepage": "https://huggingface.co/mcp",
+      "install_command": "npx mcp-remote https://huggingface.co/mcp?login",
+      "stars": 229,
+      "author": {
+        "name": "huggingface",
+        "url": "https://github.com/huggingface"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/25720743?v=4"
+    },
+    {
+      "id": "io.github.microsoft/awesome-copilot",
+      "name": "Awesome Copilot MCP Server",
+      "description": "Awesome Copilot MCP Server retrieves GitHub Copilot customization files from the awesome-copilot repository, making community-contributed instructions and prompt templates available to an agent at query time.",
+      "github_url": "https://github.com/microsoft/mcp-dotnet-samples",
+      "homepage": "https://aka.ms/mcp/dotnet/samples",
+      "install_command": "docker run ghcr.io/microsoft/mcp-dotnet-samples/awesome-copilot:1.0.2026050605",
+      "stars": 180,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "pydantic/logfire-mcp",
+      "name": "Logfire",
+      "description": "Logfire MCP gives an agent access to OpenTelemetry traces and metrics stored in Logfire, useful for querying observability data during debugging and monitoring workflows.",
+      "github_url": "https://github.com/pydantic/logfire-mcp",
+      "homepage": null,
+      "install_command": "uvx logfire-mcp",
+      "stars": 161,
+      "author": {
+        "name": "pydantic",
+        "url": "https://github.com/pydantic"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/110818415?v=4"
+    },
+    {
+      "id": "com.glean/mcp",
+      "name": "Glean Remote MCP Server",
+      "description": "Glean Remote MCP Server connects an agent to a company's Glean knowledge base, letting it search across internal documents, wikis, and enterprise content indexed by Glean.",
+      "github_url": "https://github.com/gleanwork/remote-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://{baseUrl}/mcp/{server-name}",
+      "stars": 160,
+      "author": {
+        "name": "gleanwork",
+        "url": "https://github.com/gleanwork"
+      },
+      "icon": "https://developers.glean.com/img/glean-logo.svg"
+    },
+    {
+      "id": "io.github.pgEdge/postgres-mcp",
+      "name": "pgEdge Postgres",
+      "description": "pgEdge Postgres MCP connects an agent to PostgreSQL via natural language, with hybrid search combining pgvector similarity and BM25 full-text matching, plus a built-in documentation knowledgebase for pgEdge-specific patterns.",
+      "github_url": "https://github.com/pgEdge/pgedge-postgres-mcp",
+      "homepage": "https://docs.pgedge.com/pgedge-postgres-mcp-server",
+      "install_command": "docker run ghcr.io/pgedge/postgres-mcp:latest",
+      "stars": 156,
+      "author": {
+        "name": "pgEdge",
+        "url": "https://github.com/pgEdge"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/112007662?v=4"
+    },
+    {
+      "id": "io.github.SAP/fiori-mcp-server",
+      "name": "SAP Fiori",
+      "description": "SAP Fiori MCP Server helps an agent create and modify SAP Fiori elements applications: generate list reports and object pages from OData services or CAP projects, add pages and controller extensions, and search Fiori and UI5 documentation.",
+      "github_url": "https://github.com/SAP/open-ux-tools",
+      "homepage": null,
+      "install_command": "npx -y @sap-ux/fiori-mcp-server",
+      "stars": 142,
+      "author": {
+        "name": "SAP",
+        "url": "https://github.com/SAP"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/2531208?v=4"
+    },
+    {
+      "id": "io.github.serpapi/serpapi-mcp",
+      "name": "Serpapi",
+      "description": "SerpApi MCP runs real-time searches across Google, Bing, Yahoo, DuckDuckGo, YouTube, eBay, and other engines, returning structured results including web pages, news, images, shopping, and market data.",
+      "github_url": "https://github.com/serpapi/serpapi-mcp",
+      "homepage": "https://serpapi.com/",
+      "install_command": "npx mcp-remote https://mcp.serpapi.com/mcp",
+      "stars": 134,
+      "author": {
+        "name": "serpapi",
+        "url": "https://github.com/serpapi"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/34724717?v=4"
+    },
+    {
+      "id": "azure/aks-mcp",
+      "name": "Azure Kubernetes Service",
+      "description": "AKS MCP Server bridges AI assistants and Azure Kubernetes Service, letting an agent inspect clusters, manage workloads, diagnose issues, and perform AKS operations through natural language.",
+      "github_url": "https://github.com/Azure/aks-mcp",
+      "homepage": null,
+      "install_command": "docker run ghcr.io/azure/aks-mcp",
+      "stars": 132,
+      "author": {
+        "name": "Azure",
+        "url": "https://github.com/Azure"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6844498?v=4"
+    },
+    {
+      "id": "com.webflow/mcp",
+      "name": "Webflow",
+      "description": "Webflow MCP connects an agent to Webflow sites via the Data API: read and write CMS content, manage pages and collections, and make design changes through the Designer when paired with the companion bridge app.",
+      "github_url": "https://github.com/webflow/mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.webflow.com/mcp",
+      "stars": 130,
+      "author": {
+        "name": "webflow",
+        "url": "https://github.com/webflow"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1229663?v=4"
+    },
+    {
+      "id": "microsoft/fabric-rti-mcp",
+      "name": "Fabric Real-Time Intelligence",
+      "description": "Fabric Real-Time Intelligence MCP Server connects an agent to Microsoft Fabric RTI: run KQL queries against Eventhouse and Azure Data Explorer, manage Eventstreams, set up Activator alerts, and create geospatial Map visualizations.",
+      "github_url": "https://github.com/microsoft/fabric-rti-mcp",
+      "homepage": null,
+      "install_command": "uvx microsoft-fabric-rti-mcp",
+      "stars": 114,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.github.dynatrace-oss/Dynatrace-mcp",
+      "name": "Dynatrace",
+      "description": "Dynatrace MCP connects an agent to a Dynatrace SaaS environment: query logs, metrics, traces, and problems using DQL or natural language, investigate incidents, analyze vulnerabilities, and interact with Davis AI.",
+      "github_url": "https://github.com/dynatrace-oss/Dynatrace-mcp",
+      "homepage": null,
+      "install_command": "npx -y @dynatrace-oss/dynatrace-mcp-server",
+      "stars": 113,
+      "author": {
+        "name": "dynatrace-oss",
+        "url": "https://github.com/dynatrace-oss"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/58178984?v=4"
+    },
+    {
+      "id": "io.github.miroapp/mcp-server",
+      "name": "Miro",
+      "description": "Miro MCP Server connects an agent to Miro boards, letting it read board content for context, create diagrams and tables, and generate code or documentation from design artifacts.",
+      "github_url": "https://github.com/miroapp/miro-ai",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.miro.com/",
+      "stars": 98,
+      "author": {
+        "name": "miroapp",
+        "url": "https://github.com/miroapp"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/48276018?v=4"
+    },
+    {
+      "id": "io.github.cap-js/mcp-server",
+      "name": "Cap JS",
+      "description": "The CAP MCP Server gives an agent access to the SAP Cloud Application Programming Model: search CDS model definitions across a project and query the embedded CAP documentation using semantic search.",
+      "github_url": "https://github.com/cap-js/mcp-server",
+      "homepage": "https://cap.cloud.sap/docs",
+      "install_command": "npx -y @cap-js/mcp-server",
+      "stars": 95,
+      "author": {
+        "name": "cap-js",
+        "url": "https://github.com/cap-js"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/117299792?v=4"
+    },
+    {
+      "id": "octopusdeploy/mcp-server",
+      "name": "Octopus Deploy",
+      "description": "Octopus Deploy MCP Server connects an agent to an Octopus instance for inspecting projects, releases, deployments, tenants, tasks, and Kubernetes targets. Write mode can be enabled to create and trigger releases.",
+      "github_url": "https://github.com/OctopusDeploy/mcp-server",
+      "homepage": "https://octopus.com/",
+      "install_command": "npx -y @octopusdeploy/mcp-server",
+      "stars": 95,
+      "author": {
+        "name": "OctopusDeploy",
+        "url": "https://github.com/OctopusDeploy"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1287123?v=4"
+    },
+    {
+      "id": "io.github.UI5/mcp-server",
+      "name": "UI5",
+      "description": "UI5 MCP Server supports SAPUI5 and OpenUI5 development by giving agents access to API documentation, coding guidelines, linting, manifest validation, and project scaffolding for UI5 apps and Integration Cards.",
+      "github_url": "https://github.com/UI5/mcp-server",
+      "homepage": "https://github.com/mcp/UI5/mcp-server",
+      "install_command": "npx -y @ui5/mcp-server",
+      "stars": 82,
+      "author": {
+        "name": "UI5",
+        "url": "https://github.com/UI5"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6333374?v=4"
+    },
+    {
+      "id": "microsoft/clarity-mcp-server",
+      "name": "Clarity",
+      "description": "Clarity MCP Server gives an agent access to Microsoft Clarity analytics: traffic metrics, user behavior data, session recordings, and heatmap insights for a web property.",
+      "github_url": "https://github.com/microsoft/clarity-mcp-server",
+      "homepage": "https://clarity.microsoft.com",
+      "install_command": "npx -y @microsoft/clarity-mcp-server",
+      "stars": 82,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.github.arm/arm-mcp",
+      "name": "Arm MCP Server",
+      "description": "Arm MCP Server helps an agent work with Arm architecture: search Arm documentation, scan codebases for x86-to-Arm compatibility issues, inspect container image architecture, and analyze assembly performance.",
+      "github_url": "https://github.com/arm/mcp",
+      "homepage": null,
+      "install_command": "docker run docker.io/armlimited/arm-mcp:2.0.0",
+      "stars": 72,
+      "author": {
+        "name": "arm",
+        "url": "https://github.com/arm"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/184160443?v=4"
+    },
+    {
+      "id": "cognitionai/deepwiki",
+      "name": "DeepWiki",
+      "description": "DeepWiki gives an agent access to AI-generated documentation for public GitHub repositories, covering wiki structure, page contents, and natural language questions answered from the indexed codebase.",
+      "github_url": "https://github.com/CognitionAI/deepwiki",
+      "homepage": "https://DeepWiki.com",
+      "install_command": "npx mcp-remote https://mcp.deepwiki.com/sse",
+      "stars": 71,
+      "author": {
+        "name": "CognitionAI",
+        "url": "https://github.com/CognitionAI"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/163493330?v=4"
+    },
+    {
+      "id": "com.sonatype/dependency-management-mcp-server",
+      "name": "Sonatype Dependency Management",
+      "description": "Sonatype Dependency Management MCP connects an agent to Sonatype's open-source intelligence platform: check component versions, scan for known vulnerabilities, verify license compliance, and get remediation guidance before adding or updating dependencies.",
+      "github_url": "https://github.com/sonatype/dependency-management-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.guide.sonatype.com/mcp",
+      "stars": 71,
+      "author": {
+        "name": "sonatype",
+        "url": "https://github.com/sonatype"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/44938?v=4"
+    },
+    {
+      "id": "io.github.PagerDuty/pagerduty-mcp",
+      "name": "PagerDuty",
+      "description": "PagerDuty MCP Server connects an agent to PagerDuty, letting it manage incidents, query on-call schedules, inspect services, and interact with event orchestrations.",
+      "github_url": "https://github.com/PagerDuty/pagerduty-mcp-server",
+      "homepage": "https://mcp-docs.fde.pagerduty.com",
+      "install_command": "uvx pagerduty-mcp",
+      "stars": 67,
+      "author": {
+        "name": "PagerDuty",
+        "url": "https://github.com/PagerDuty"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/766800?v=4"
+    },
+    {
+      "id": "io.github.ScrapeGraphAI/scrapegraph-mcp",
+      "name": "ScrapeGraphAI Scrapegraph",
+      "description": "ScrapeGraph AI connects an agent to the ScrapeGraph API for web scraping, content extraction, search, and multi-page crawling, with support for scheduled monitoring jobs and structured JSON output.",
+      "github_url": "https://github.com/ScrapeGraphAI/scrapegraph-mcp",
+      "homepage": null,
+      "install_command": "uvx scrapegraph-mcp",
+      "stars": 66,
+      "author": {
+        "name": "ScrapeGraphAI",
+        "url": "https://github.com/ScrapeGraphAI"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/171017415?v=4"
+    },
+    {
+      "id": "codacy/codacy-mcp-server",
+      "name": "Codacy",
+      "description": "Codacy MCP Server connects an agent to Codacy's code analysis platform: surface quality issues, coverage gaps, duplication, and security findings across repositories, files, and pull requests.",
+      "github_url": "https://github.com/codacy/codacy-mcp-server",
+      "homepage": null,
+      "install_command": "npx -y @codacy/codacy-mcp",
+      "stars": 58,
+      "author": {
+        "name": "codacy",
+        "url": "https://github.com/codacy"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1834093?v=4"
+    },
+    {
+      "id": "io.github.mapbox/mcp-devkit-server",
+      "name": "Mapbox MCP Devkit Server",
+      "description": "Mapbox MCP Devkit Server connects an agent to Mapbox developer APIs: create and manage map styles, handle access tokens, convert coordinates, and reference layer specifications and Streets v8 field definitions.",
+      "github_url": "https://github.com/mapbox/mcp-devkit-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp-devkit.mapbox.com/mcp",
+      "stars": 50,
+      "author": {
+        "name": "mapbox",
+        "url": "https://github.com/mapbox"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/600935?v=4"
+    },
+    {
+      "id": "amplitude/mcp-server-guide",
+      "name": "Amplitude",
+      "description": "Amplitude MCP Server connects an agent to Amplitude product analytics, letting it query event data, explore user behavior, and pull experiment and funnel results through conversation.",
+      "github_url": "https://github.com/amplitude/mcp-server-guide",
+      "homepage": "https://amplitude.com/docs/analytics/amplitude-mcp",
+      "install_command": "npx mcp-remote https://mcp.amplitude.com/mcp",
+      "stars": 45,
+      "author": {
+        "name": "amplitude",
+        "url": "https://github.com/amplitude"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/2291562?v=4"
+    },
+    {
+      "id": "zapier/zapier-mcp",
+      "name": "Zapier",
+      "description": "Zapier MCP connects an agent to over 9,000 apps and 40,000 actions. Once actions are enabled, the agent can send messages, update records, create tasks, and trigger workflows across any connected service using natural language.",
+      "github_url": "https://github.com/zapier/zapier-mcp",
+      "homepage": "https://zapier.com/mcp",
+      "install_command": "npx mcp-remote {zapier_mcp_url}",
+      "stars": 40,
+      "author": {
+        "name": "zapier",
+        "url": "https://github.com/zapier"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1261889?v=4"
+    },
+    {
+      "id": "io.github.microsoft/EnterpriseMCP",
+      "name": "Microsoft MCP Server for Enterprise",
+      "description": "Microsoft MCP Server for Enterprise translates natural language queries into Microsoft Graph API calls, giving an agent read access to Microsoft Entra data: users, groups, apps, devices, roles, Conditional Access, and sign-in telemetry.",
+      "github_url": "https://github.com/microsoft/EnterpriseMCP",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.svc.cloud.microsoft/enterprise",
+      "stars": 38,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.snyk/mcp",
+      "name": "Snyk",
+      "description": "Snyk MCP integrates Snyk's security scanning into an agent workflow: scan open-source dependencies, application code, infrastructure-as-code, containers, and secrets for vulnerabilities and get findings back in context.",
+      "github_url": "https://github.com/snyk/studio-mcp",
+      "homepage": null,
+      "install_command": "npx -y snyk",
+      "stars": 37,
+      "author": {
+        "name": "snyk",
+        "url": "https://github.com/snyk"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/12959162?v=4"
+    },
+    {
+      "id": "io.github.contextstreamio/mcp-server",
+      "name": "ContextStream MCP Server",
+      "description": "ContextStream MCP Server adds persistent memory and codebase-aware context to AI coding assistants, indexing project files so agents can search, recall, and reason about code across sessions.",
+      "github_url": "https://github.com/contextstream/mcp-server",
+      "homepage": null,
+      "install_command": "npx -y @contextstream/mcp-server",
+      "stars": 35,
+      "author": {
+        "name": "contextstream",
+        "url": "https://github.com/contextstream"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/243372423?v=4"
+    },
+    {
+      "id": "io.github.pubnub/mcp-server",
+      "name": "PubNub MCP Server",
+      "description": "PubNub MCP Server gives an agent access to SDK documentation for 20+ languages, plus live platform operations: send and receive messages, track presence, manage user and channel metadata, and configure keysets.",
+      "github_url": "https://github.com/pubnub/pubnub-mcp-server",
+      "homepage": null,
+      "install_command": "npx -y @pubnub/mcp",
+      "stars": 31,
+      "author": {
+        "name": "pubnub",
+        "url": "https://github.com/pubnub"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/297109?s=64&v=4"
+    },
+    {
+      "id": "io.github.zscaler/zscaler-mcp-server",
+      "name": "Zscaler Zero Trust Exchange",
+      "description": "Zscaler MCP Server connects an agent to the Zscaler Zero Trust Exchange platform, covering ZPA, ZIA, ZDX, ZCC, and EASM. Read-only by default, with write operations available via explicit opt-in.",
+      "github_url": "https://github.com/zscaler/zscaler-mcp-server",
+      "homepage": null,
+      "install_command": "uvx zscaler-mcp",
+      "stars": 30,
+      "author": {
+        "name": "zscaler",
+        "url": "https://github.com/zscaler"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1709408?v=4"
+    },
+    {
+      "id": "io.github.f/prompts.chat-mcp",
+      "name": "prompts.chat MCP Server",
+      "description": "prompts.chat MCP Server gives an agent access to the prompts.chat library: search prompts by keyword, category, or tag, retrieve prompt details with variable substitution, and save new prompts to an account.",
+      "github_url": "https://github.com/f/prompts.chat-mcp",
+      "homepage": null,
+      "install_command": "npx -y @fkadev/prompts.chat-mcp",
+      "stars": 28,
+      "author": {
+        "name": "f",
+        "url": "https://github.com/f"
+      },
+      "icon": "https://prompts.chat/logo.svg"
+    },
+    {
+      "id": "host.justcall.mcp/justcall-mcp-server",
+      "name": "JustCall MCP Server",
+      "description": "JustCall MCP Server lets AI agents initiate voice calls and send SMS messages through JustCall, and access call transcripts and contact records from the JustCall platform.",
+      "github_url": "https://github.com/saaslabsco/justcall-mcp-server",
+      "homepage": "https://justcall.io",
+      "install_command": "npx mcp-remote https://mcp.justcall.host/mcp",
+      "stars": 26,
+      "author": {
+        "name": "saaslabsco",
+        "url": "https://github.com/saaslabsco"
+      },
+      "icon": "https://cdn.justcall.io/assets-marketing/images/favicon.png"
+    },
+    {
+      "id": "io.github.goreleaser/mcp",
+      "name": "The MCP server for GoReleaser",
+      "description": "GoReleaser MCP validates GoReleaser configuration files for errors and deprecated options, and surfaces embedded documentation to help an agent write and modernize GoReleaser configs.",
+      "github_url": "https://github.com/goreleaser/mcp",
+      "homepage": "https://github.com/mcp/goreleaser/mcp",
+      "install_command": "npx -y @goreleaser/mcp",
+      "stars": 22,
+      "author": {
+        "name": "goreleaser",
+        "url": "https://github.com/goreleaser"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/24697112?v=4"
+    },
+    {
+      "id": "launchdarkly/mcp-server",
+      "name": "Launchdarkly",
+      "description": "LaunchDarkly MCP Server connects an agent to LaunchDarkly for managing feature flags, AI configs, targeting rules, experiments, and gradual rollouts across environments.",
+      "github_url": "https://github.com/launchdarkly/mcp-server",
+      "homepage": null,
+      "install_command": "npx -y @launchdarkly/mcp-server",
+      "stars": 21,
+      "author": {
+        "name": "launchdarkly",
+        "url": "https://github.com/launchdarkly"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/8039656?v=4"
+    },
+    {
+      "id": "io.github.dynatrace-oss/dynatrace-managed-mcp",
+      "name": "Dynatrace Managed",
+      "description": "Dynatrace Managed MCP connects an agent to self-hosted Dynatrace Managed deployments, supporting multi-environment access to logs, events, metrics, entities, and problems via the V2 REST API.",
+      "github_url": "https://github.com/dynatrace-oss/dynatrace-managed-mcp",
+      "homepage": null,
+      "install_command": "npx -y @dynatrace-oss/dynatrace-managed-mcp-server",
+      "stars": 20,
+      "author": {
+        "name": "dynatrace-oss",
+        "url": "https://github.com/dynatrace-oss"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/58178984?v=4"
+    },
+    {
+      "id": "io.github.rigour-labs/rigour",
+      "name": "Rigour",
+      "description": "Rigour runs quality gates for AI-generated code: lint, test, and build checks with memory of past results, so an agent knows when its output actually passes project standards.",
+      "github_url": "https://github.com/rigour-labs/rigour",
+      "homepage": "https://www.rigour.run/",
+      "install_command": "npx -y @rigour-labs/mcp",
+      "stars": 20,
+      "author": {
+        "name": "rigour-labs",
+        "url": "https://github.com/rigour-labs"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/252879575?v=4"
+    },
+    {
+      "id": "io.github.venomseven/nslookup",
+      "name": "Venomseven Nslookup",
+      "description": "NSLookup.io MCP connects an agent to DNS lookup and domain intelligence tools: query any record type, check propagation across global resolvers, audit DNS health, inspect SSL certificates, scan for security misconfigurations, and check uptime.",
+      "github_url": "https://github.com/NsLookup-io/nslookup-mcp",
+      "homepage": "https://nslookup.io",
+      "install_command": "npx mcp-remote https://mcp.nslookup.io/mcp",
+      "stars": 19,
+      "author": {
+        "name": "NsLookup-io",
+        "url": "https://github.com/NsLookup-io"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/270330640?v=4"
+    },
+    {
+      "id": "io.github.UI5/webcomponents-mcp-server",
+      "name": "UI5 Webcomponents",
+      "description": "UI5 Web Components MCP Server gives an agent access to UI5 Web Components documentation: component APIs, integration guides for React, Angular, and JavaScript, and the full documentation library.",
+      "github_url": "https://github.com/UI5/webcomponents-mcp-server",
+      "homepage": null,
+      "install_command": "npx -y @ui5/webcomponents-mcp-server",
+      "stars": 17,
+      "author": {
+        "name": "UI5",
+        "url": "https://github.com/UI5"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6333374?v=4"
+    },
+    {
+      "id": "com.stackoverflow.mcp/mcp",
+      "name": "Stack Overflow MCP Server",
+      "description": "Stack Overflow MCP gives an agent access to Stack Overflow's technical knowledge base: search questions and answers, retrieve full conversation threads, and ground responses in community-verified solutions.",
+      "github_url": "https://github.com/StackExchange/Stack-MCP",
+      "homepage": "https://mcp.stackoverflow.com",
+      "install_command": "npx mcp-remote https://mcp.stackoverflow.com",
+      "stars": 16,
+      "author": {
+        "name": "StackExchange",
+        "url": "https://github.com/StackExchange"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/1393171?v=4"
+    },
+    {
+      "id": "io.port/Port",
+      "name": "Port",
+      "description": "Port MCP Server connects an AI agent to Port.io, a developer portal platform, letting it query and manage software catalog entities, scorecards, and self-service actions.",
+      "github_url": "https://github.com/port-labs/remote-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.port.io/v1",
+      "stars": 15,
+      "author": {
+        "name": "port-labs",
+        "url": "https://github.com/port-labs"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/97434394?v=4"
+    },
+    {
+      "id": "io.github.sourcegraph/mcp",
+      "name": "Sourcegraph MCP Server",
+      "description": "Sourcegraph MCP Server connects an agent to a Sourcegraph instance for code search, semantic search, go-to-definition, find-references, and diff search across all indexed repositories.",
+      "github_url": "https://github.com/sourcegraph-community/mcpregistry",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://{sourcegraph_hostname}/.api/mcp",
+      "stars": 14,
+      "author": {
+        "name": "sourcegraph-community",
+        "url": "https://github.com/sourcegraph-community"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/93545297?v=4"
+    },
+    {
+      "id": "com.wix/mcp",
+      "name": "Wix",
+      "description": "Wix MCP Server connects an agent to Wix development tools: search the Wix SDK, REST, Design System, and headless documentation, and make live API calls against Wix sites on behalf of an authenticated account.",
+      "github_url": "https://github.com/wix/wix-mcp",
+      "homepage": "https://mcp.wix.com",
+      "install_command": "npx mcp-remote https://mcp.wix.com/sse",
+      "stars": 13,
+      "author": {
+        "name": "wix",
+        "url": "https://github.com/wix"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/686511?v=4"
+    },
+    {
+      "id": "co.axiom/mcp",
+      "name": "Axiom",
+      "description": "Axiom MCP connects an agent to an Axiom account: list datasets and schemas, run APL queries against log and event data, and explore telemetry for anomalies and monitoring.",
+      "github_url": "https://github.com/axiomhq/mcp",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.axiom.co/sse",
+      "stars": 12,
+      "author": {
+        "name": "axiomhq",
+        "url": "https://github.com/axiomhq"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/21122348?v=4"
+    },
+    {
+      "id": "microsoft/devbox-mcp-server",
+      "name": "Dev Box",
+      "description": "Dev Box MCP Server lets an agent manage Microsoft Dev Box resources: create, start, stop, and configure cloud developer workstations and their associated pools and projects.",
+      "github_url": "https://github.com/microsoft/devbox-mcp-server",
+      "homepage": null,
+      "install_command": "npx -y @microsoft/devbox-mcp",
+      "stars": 12,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.github.jfrog/jfrog-mcp-server",
+      "name": "JFrog Remote MCP Server",
+      "description": "JFrog MCP Server connects an agent to the JFrog platform: search artifacts with AQL, look up package versions and vulnerabilities via the Catalog, check curation status, and generate security reports on CVEs.",
+      "github_url": "https://github.com/jfrog/jfrog-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://myPlatform.jfrog.github.io/mcp",
+      "stars": 8,
+      "author": {
+        "name": "jfrog",
+        "url": "https://github.com/jfrog"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/499942?v=4"
+    },
+    {
+      "id": "com.vercel/vercel-mcp",
+      "name": "Vercel",
+      "description": "Vercel MCP Server gives an agent access to Vercel projects: inspect deployments, manage domains, view build and runtime logs, and interact with project configuration.",
+      "github_url": "https://github.com/vercel/vercel-mcp-overview",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.vercel.com",
+      "stars": 7,
+      "author": {
+        "name": "vercel",
+        "url": "https://github.com/vercel"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/14985020?v=4"
+    },
+    {
+      "id": "com.stackhawk/stackhawk",
+      "name": "Stackhawk",
+      "description": "StackHawk MCP integrates StackHawk's dynamic application security testing into an agent workflow: configure scans, run them against a target application, triage findings, and validate StackHawk YAML configurations.",
+      "github_url": "https://github.com/stackhawk/stackhawk-mcp",
+      "homepage": null,
+      "install_command": "uvx stackhawk-mcp",
+      "stars": 6,
+      "author": {
+        "name": "stackhawk",
+        "url": "https://github.com/stackhawk"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/53230463?v=4"
+    },
+    {
+      "id": "intercom/intercom-mcp-server",
+      "name": "Intercom",
+      "description": "Intercom MCP Server gives an agent access to Intercom customer data: conversations, contacts, tickets, and help center content, so it can assist with support workflows and customer research.",
+      "github_url": "https://github.com/intercom/intercom-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.intercom.com/mcp",
+      "stars": 5,
+      "author": {
+        "name": "intercom",
+        "url": "https://github.com/intercom"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6585?v=4"
+    },
+    {
+      "id": "io.github.AnimaApp/anima",
+      "name": "Anima MCP Server",
+      "description": "Anima MCP Server bridges design and code: an agent can pull projects from Anima Playground, convert Figma design URLs directly to production-ready code, and reference a team's design system when building features.",
+      "github_url": "https://github.com/AnimaApp/mcp-server-guide",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://public-api.animaapp.com/v1/mcp",
+      "stars": 5,
+      "author": {
+        "name": "AnimaApp",
+        "url": "https://github.com/AnimaApp"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/20587282?v=4"
+    },
+    {
+      "id": "io.github.holomodular/servicebricks",
+      "name": "Holomodular Servicebricks",
+      "description": "ServiceBricks MCP Server generates C# .NET microservices from natural language descriptions, producing a downloadable ZIP with REST APIs, storage configuration, and the full ServiceBricks foundation scaffolded.",
+      "github_url": "https://github.com/holomodular/ServiceBricks",
+      "homepage": "http://ServiceBricks.com",
+      "install_command": "npx mcp-remote https://servicebricks.com/api/mcp",
+      "stars": 4,
+      "author": {
+        "name": "holomodular",
+        "url": "https://github.com/holomodular"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/97818548?v=4"
+    },
+    {
+      "id": "com.qualityclouds/mcp-server-qualityclouds",
+      "name": "LiveCheck AI",
+      "description": "LiveCheck AI validates code against enterprise governance rules for Salesforce, ServiceNow, Microsoft Dynamics 365, and JavaScript, catching security and performance issues before generated code is delivered.",
+      "github_url": "https://github.com/qualityclouds/qualityclouds",
+      "homepage": "https://www.qualityclouds.com",
+      "install_command": "npx mcp-remote https://mcp.qualityclouds.com/mcp",
+      "stars": 3,
+      "author": {
+        "name": "qualityclouds",
+        "url": "https://github.com/qualityclouds"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/76555854?v=4"
+    },
+    {
+      "id": "com.microsoft/sentinel-data-exploration",
+      "name": "Microsoft Sentinel Data Exploration",
+      "description": "Microsoft Sentinel Data Exploration MCP lets an agent query the Sentinel data lake to find relevant security logs and telemetry, useful for building detection and investigation agents.",
+      "github_url": "https://github.com/microsoft/sentinel-data-exploration-mcp",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://sentinel.microsoft.com/mcp/data-exploration",
+      "stars": 2,
+      "author": {
+        "name": "microsoft",
+        "url": "https://github.com/microsoft"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/6154722?v=4"
+    },
+    {
+      "id": "io.github.Wopee-io/wopee-mcp",
+      "name": "Wopee",
+      "description": "Wopee connects an agent to the Wopee.io autonomous testing platform: dispatch crawl-and-test runs, generate user stories and test cases from crawled app state, and retrieve test artifacts and run status.",
+      "github_url": "https://github.com/Wopee-io/wopee-mcp",
+      "homepage": null,
+      "install_command": "npx -y wopee-mcp",
+      "stars": 2,
+      "author": {
+        "name": "Wopee-io",
+        "url": "https://github.com/Wopee-io"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/124098588?v=4"
+    },
+    {
+      "id": "box/mcp-server-box-remote",
+      "name": "Box",
+      "description": "Box MCP Server connects an agent to enterprise content stored in Box: read and search files and folders, query Box AI for answers across documents, and extract metadata, all within Box's authorization model.",
+      "github_url": "https://github.com/box/mcp-server-box-remote",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.box.com",
+      "stars": 1,
+      "author": {
+        "name": "box",
+        "url": "https://github.com/box"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/23900?v=4"
+    },
+    {
+      "id": "com.getguru/mcp-server",
+      "name": "Guru Remote MCP Server",
+      "description": "Guru MCP Server connects an agent to a Guru knowledge base: search and retrieve verified answers from cards, create drafts, update existing content, and access AI-powered answer generation, all respecting existing permissions.",
+      "github_url": "https://github.com/guruhq/remote-mcp-server",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://mcp.api.getguru.com/mcp",
+      "stars": 1,
+      "author": {
+        "name": "guruhq",
+        "url": "https://github.com/guruhq"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/5881418?v=4"
+    },
+    {
+      "id": "io.shipbook/mcp",
+      "name": "Shipbook",
+      "description": "Shipbook MCP connects an agent to Shipbook's mobile app logging platform, letting it search production logs and read Loglytics error classifications to diagnose runtime issues.",
+      "github_url": "https://github.com/ShipBook/shipbook-mcp",
+      "homepage": null,
+      "install_command": "npx mcp-remote https://api.shipbook.io/mcp",
+      "stars": 1,
+      "author": {
+        "name": "ShipBook",
+        "url": "https://github.com/ShipBook"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/35656266?v=4"
+    },
+    {
+      "id": "com.shipstatic/mcp",
+      "name": "ShipStatic",
+      "description": "ShipStatic deploys static sites instantly from an agent with no account required. An agent can upload files and get a live URL, manage custom domains and DNS, and optionally password-protect deployments.",
+      "github_url": "https://github.com/shipstatic/mcp",
+      "homepage": "https://www.shipstatic.com/mcp",
+      "install_command": "npx -y @shipstatic/mcp",
+      "stars": 0,
+      "author": {
+        "name": "shipstatic",
+        "url": "https://github.com/shipstatic"
+      },
+      "icon": "https://raw.githubusercontent.com/shipstatic/mcp/main/icon.svg"
+    }
+  ]
+}
