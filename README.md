@@ -74,6 +74,10 @@ Need a different stack? [Suggest one](https://stax.sh/submit?utm_source=github&u
 
 ---
 
+> If a stack here saved you ten minutes, [**★ the repo**](https://github.com/stax-sh/mcp-stacks) — it's how I know which stacks to curate next.
+
+---
+
 ## Top 10 servers
 
 Most-starred servers in the directory.
@@ -275,4 +279,4 @@ Directory content [MIT](./LICENSE). Each listed server is licensed by its respec
 
 ---
 
-<sub>Maintained by [stax.sh](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks). Last generated: 2026-05-07</sub>
+<sub>Maintained by [stax.sh](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) · [★ on GitHub](https://github.com/stax-sh/mcp-stacks) · Last generated 2026-05-07</sub>

@@ -143,6 +143,10 @@ lines.push(`Need a different stack? [Suggest one](https://stax.sh/submit?${UTM})
 lines.push("");
 lines.push(`---`);
 lines.push("");
+lines.push(`> If a stack here saved you ten minutes, [**★ the repo**](https://github.com/stax-sh/mcp-stacks) — it's how I know which stacks to curate next.`);
+lines.push("");
+lines.push(`---`);
+lines.push("");
 
 // ── Top 10 ────────────────────────────────────────────────────────────────
 lines.push(`## Top 10 servers`);
@@ -250,7 +254,7 @@ lines.push(`Directory content [MIT](./LICENSE). Each listed server is licensed b
 lines.push("");
 lines.push(`---`);
 lines.push("");
-lines.push(`<sub>Maintained by [stax.sh](https://stax.sh?${UTM}). Last generated: ${new Date().toISOString().slice(0, 10)}</sub>`);
+lines.push(`<sub>Maintained by [stax.sh](https://stax.sh?${UTM}) · [★ on GitHub](https://github.com/stax-sh/mcp-stacks) · Last generated ${new Date().toISOString().slice(0, 10)}</sub>`);
 lines.push("");
 
 writeFileSync(join(root, "README.md"), lines.join("\n"));
