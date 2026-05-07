@@ -1,67 +1,69 @@
 # Contributing
 
-Thanks for wanting to contribute. This list is curated, so submissions go through review — not every server makes it in. That's the value: a reader trusts that an entry on this list isn't pure noise.
+This list is curated. Submissions go through review.
 
 ## Two ways to submit
 
-**1. Use the submission form (fastest)**
+**1. Use the form (fastest):** [stax.sh/submit](https://stax.sh/submit?utm_source=github&utm_medium=contributing&utm_campaign=mcp-stacks). No git required, same review queue.
 
-[stax.sh/submit](https://stax.sh/submit?utm_source=github&utm_medium=contributing&utm_campaign=mcp-stacks) feeds the same review queue. No git required.
+**2. Open a PR:** edit `data/servers.json`, run `node scripts/build-readme.mjs`, commit both the data change and the regenerated README.
 
-**2. Open a pull request**
+---
 
-Edit `data/servers.json` directly, then run the README generator:
+## What we check
 
-```bash
-node scripts/build-readme.mjs
-```
+### 1. Security — the bar that matters most
 
-Commit both the data change and the regenerated `README.md`.
+A listed server runs with whatever permissions a user grants it. We say no to anything that would put that user at obvious risk. Specifically, we look for:
 
-## What we look for
+- **Public source code.** No closed-source binaries on this list. We need to be able to read it, and so does the user before they install it.
+- **Honest scoping.** Read-only modes available where it makes sense (DBs, filesystems). Tools don't quietly request more access than they need.
+- **Tokens stay where they belong.** Credentials read from env vars or the client's own auth flow. No proxying through a third-party server by default.
+- **No surprise network calls.** A "filesystem" server shouldn't phone home. A "docs" server shouldn't read your repos.
+- **Pinnable versions.** Users can pin to a specific release rather than `@latest`.
 
-A server gets in if it:
+If we can't tell from a 10-minute read of the source, we ask the author. If the answer is hand-wavy, we don't list it.
 
-- **Has a public source repo.** No closed-source binaries.
-- **Implements MCP.** Not "uses an LLM," not "is AI-related." We're listing servers that speak the [Model Context Protocol](https://modelcontextprotocol.io).
-- **Is alive.** Last commit within ~6 months unless it's stable infrastructure code.
-- **Solves something specific.** "Generic AI tool" entries get cut. The description should answer "what does this let an agent do that it couldn't before?"
-- **Doesn't ship obvious security smells.** Logging tokens to stdout, no auth scoping, exfiltrating data by default — these are auto-rejects. See [SECURITY.md](./SECURITY.md).
+See [SECURITY.md](./SECURITY.md) for the full guidance we apply (and that users should apply when installing).
 
-## What we cut
+### 2. Specific value
 
-- Spam entries (typoed clones, x402 token-grab projects, AI-generated submissions with no real implementation)
-- Aggregators of aggregators
-- Servers that haven't been touched in 12+ months and have no users
-- Servers superseded by an official one (we keep the official one)
+The description should answer: **what can an agent do with this that it couldn't before?** Servers that don't pass this test get cut — generic "AI helper" entries waste a reader's time.
 
-## Field guide for `servers.json` entries
+### 3. Useful install path
+
+Users should be able to copy one command and have a working server. `npx -y …`, `uvx …`, `mcp-remote https://…`. Multi-step setups belong in the linked README, not the install field.
+
+---
+
+## Field guide for `servers.json`
 
 ```json
 {
   "id": "io.github.author/server-name",
   "name": "Display Name",
-  "description": "One paragraph. Lead with what an agent can do with it. Avoid marketing language.",
+  "description": "One paragraph. Lead with the verb — what an agent can do with it. No marketing language.",
   "github_url": "https://github.com/author/server-name",
   "homepage": "https://product-homepage.example",
   "install_command": "npx -y server-name",
   "stars": 1234,
-  "author": {
-    "name": "author",
-    "url": "https://github.com/author"
-  },
+  "author": { "name": "author", "url": "https://github.com/author" },
   "icon": "https://avatars.githubusercontent.com/u/12345?v=4"
 }
 ```
 
-- `id` follows reverse-DNS or `org/repo` form. Match the official MCP registry id when one exists.
-- `description` is the most-read field. Spend time on it. Plain English, no buzzwords, lead with the verb (what the agent does).
-- `install_command` is what a user pastes. Prefer `npx -y` / `uvx` / `mcp-remote`. Avoid multi-step setups in this field — link to the repo's README for those.
+- `id` — reverse-DNS or `org/repo` form. Match the official MCP registry id when one exists.
+- `description` — the most-read field. Plain English, lead with the verb.
+- `install_command` — the exact string a user pastes. Prefer `npx -y` / `uvx` / `mcp-remote`.
+
+---
 
 ## Updating a stack
 
-Stacks live in `data/stacks.json`. They are very curated: each server in a stack needs a clear reason it's there, and the stack as a whole needs to solve a workflow most people would actually run. New stack proposals get more scrutiny than new server submissions — make a strong case in the PR description.
+Stacks (`data/stacks.json`) are highly curated: each included server needs a clear reason it's there, and the stack as a whole has to solve a workflow most people would actually run. New stack proposals get more scrutiny than new server submissions — make a strong case in the PR description.
+
+---
 
 ## License
 
-By contributing, you agree your contributions are licensed under MIT (see [LICENSE](./LICENSE)).
+By contributing, you agree your contributions are MIT-licensed (see [LICENSE](./LICENSE)).
