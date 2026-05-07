@@ -19,12 +19,18 @@ const fmtStars = (n) => (n >= 1000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, ""
 const escapePipes = (s) => s.replace(/\|/g, "\\|");
 
 // Programmatically shorten a description ~50% by stripping boilerplate.
+// Cuts at clause boundaries (commas) before character cap, so descriptions
+// end cleanly instead of trailing into ellipsis.
 function shortDesc(s, name) {
   let text = s.split(/(?<=[.!?])\s/)[0].replace(/[.!?]$/, "");
   const escName = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   text = text.replace(new RegExp(`^${escName}( MCP)?( Server)?\\s+`, "i"), "");
   text = text.replace(/^The /, "");
   text = text.replace(/^MCP( Server)?\s+/i, "");
+  // Catch "Xxx MCP", "Xxx MCP Server" leading patterns when the descriptive
+  // name in the description doesn't match the data's `name` field
+  // (e.g. data name "SonarSource Sonarqube", description starts "SonarQube MCP").
+  text = text.replace(/^[\w.\-]+(?: [\w.\-]+){0,3} MCP( Server)?\s+/i, "");
   const agent = "(an? )?(ai\\s+)?(coding\\s+)?agents?";
   const strips = [
     new RegExp(`^connects ${agent} (directly )?to\\s+`, "i"),
@@ -33,16 +39,23 @@ function shortDesc(s, name) {
     new RegExp(`^helps ${agent}\\s+`, "i"),
     new RegExp(`^bridges ${agent} and\\s+`, "i"),
     new RegExp(`^supports ${agent}\\s+`, "i"),
-    new RegExp(`^integrates (its )?/i`, "i"),
+    new RegExp(`^integrates (its )?\\s+`, "i"),
     new RegExp(`^for ${agent}\\s+`, "i"),
     /^connects directly\s+/i,
   ];
   for (const re of strips) text = text.replace(re, "");
   text = text.replace(/^the /i, "");
   text = text.charAt(0).toUpperCase() + text.slice(1);
-  if (text.length > 90) {
-    const cut = text.slice(0, 90).lastIndexOf(" ");
-    text = text.slice(0, cut > 60 ? cut : 90) + "…";
+  // Prefer cutting at first comma after 40 chars; otherwise word boundary at ~75.
+  const CAP = 75;
+  if (text.length > CAP) {
+    const commaIdx = text.indexOf(", ", 40);
+    if (commaIdx !== -1 && commaIdx <= CAP) {
+      text = text.slice(0, commaIdx);
+    } else {
+      const cut = text.slice(0, CAP).lastIndexOf(" ");
+      text = text.slice(0, cut > 40 ? cut : CAP);
+    }
   }
   return text;
 }
@@ -50,9 +63,15 @@ function shortDesc(s, name) {
 // Compress rationale lines for the bullet under each stack.
 function shortRationale(s) {
   let text = s.split(/(?<=[.!?])\s/)[0].replace(/[.!?]$/, "");
-  if (text.length > 80) {
-    const cut = text.slice(0, 80).lastIndexOf(" ");
-    text = text.slice(0, cut > 50 ? cut : 80) + "…";
+  const CAP = 70;
+  if (text.length > CAP) {
+    const commaIdx = text.indexOf(", ", 30);
+    if (commaIdx !== -1 && commaIdx <= CAP) {
+      text = text.slice(0, commaIdx);
+    } else {
+      const cut = text.slice(0, CAP).lastIndexOf(" ");
+      text = text.slice(0, cut > 30 ? cut : CAP);
+    }
   }
   return text;
 }
@@ -63,11 +82,13 @@ const lines = [];
 // ── Header ────────────────────────────────────────────────────────────────
 lines.push(`# mcp-stacks`);
 lines.push("");
-lines.push(`Wire your AI agent up with the right tools in under a minute. Each **stack** below is a small bundle of MCP servers tested together for one job — copy the install block, paste it into Claude Code, Cursor, or Claude Desktop, ship.`);
+lines.push(`A **stack** is a small bundle of MCP servers tested together for one job.`);
 lines.push("");
-lines.push(`Behind the stacks is a directory of ${servers.length} servers, each reviewed for security and curated to keep the signal up.`);
+lines.push(`Copy the install block, paste it into Claude Code, Cursor, or Claude Desktop, ship.`);
 lines.push("");
-lines.push(`**[Browse on stax.sh →](https://stax.sh?${UTM})**`);
+lines.push(`Behind the stacks: a curated directory of ${servers.length} servers, each reviewed for security.`);
+lines.push("");
+lines.push(`[Browse on stax.sh →](https://stax.sh?${UTM})`);
 lines.push("");
 lines.push(`---`);
 lines.push("");
@@ -81,6 +102,8 @@ const stackTaglines = {
 
 lines.push(`## Stacks`);
 lines.push("");
+lines.push(`Three pre-built bundles. Pick one, copy the install block, ship.`);
+lines.push("");
 lines.push(`| Stack | For | Servers |`);
 lines.push(`| --- | --- | --- |`);
 for (const stack of stacks) {
@@ -91,7 +114,7 @@ for (const stack of stacks) {
     .join(" · ");
   const tagline = stackTaglines[stack.slug] ?? stack.description.split(/(?<=[.!?])\s/)[0];
   const title = stack.name.replace(/^The /, "").replace(/ Stack$/, "");
-  lines.push(`| **[${title}](#${anchor})** | ${escapePipes(tagline)} | ${escapePipes(serverNames)} |`);
+  lines.push(`| [**${title}**](#${anchor}) | ${escapePipes(tagline)} | ${escapePipes(serverNames)} |`);
 }
 lines.push("");
 
@@ -105,18 +128,18 @@ for (const stack of stacks) {
     const s = serverById.get(id);
     if (!s) continue;
     const rationale = shortRationale(stack.rationale_per_server[id] ?? "");
-    lines.push(`- **[${s.name}](${staxServer(s.id)})** — ${rationale}`);
+    lines.push(`- [${s.name}](${staxServer(s.id)}) — ${rationale}`);
   }
   lines.push("");
   lines.push("```bash");
   lines.push(stack.combined_install);
   lines.push("```");
   lines.push("");
-  lines.push(`[Why these →](${staxStack(stack.slug)})`);
+  lines.push(`[Why these four →](${staxStack(stack.slug)})`);
   lines.push("");
 }
 
-lines.push(`> Need a different stack? [Suggest one](https://stax.sh/submit?${UTM}).`);
+lines.push(`Need a different stack? [Suggest one](https://stax.sh/submit?${UTM}).`);
 lines.push("");
 lines.push(`---`);
 lines.push("");
@@ -131,10 +154,10 @@ lines.push(`| --- | --- | --- | ---: | --- |`);
 top.forEach((s, i) => {
   const desc = shortDesc(s.description, s.name);
   const install = s.install_command ? `\`${s.install_command}\`` : "—";
-  lines.push(`| ${i + 1} | **[${s.name}](${staxServer(s.id)})** | ${escapePipes(desc)} | ${fmtStars(s.stars)} | ${escapePipes(install)} |`);
+  lines.push(`| ${i + 1} | [${s.name}](${staxServer(s.id)}) | ${escapePipes(desc)} | ${fmtStars(s.stars)} | ${escapePipes(install)} |`);
 });
 lines.push("");
-lines.push(`See **[the full directory on stax.sh](https://stax.sh/servers?${UTM})** for filtering, search, and per-server security notes.`);
+lines.push(`See [the full directory on stax.sh](https://stax.sh/servers?${UTM}) for filtering, search, and per-server security notes.`);
 lines.push("");
 lines.push(`---`);
 lines.push("");
@@ -142,7 +165,9 @@ lines.push("");
 // ── How to use ────────────────────────────────────────────────────────────
 lines.push(`## How to use these servers`);
 lines.push("");
-lines.push(`Most run via \`npx\` (Node), \`uvx\` (Python), or as a remote endpoint. Wire them into your client:`);
+lines.push(`Most run via \`npx\` (Node), \`uvx\` (Python), or as a remote endpoint.`);
+lines.push("");
+lines.push(`Wire them into your client:`);
 lines.push("");
 lines.push(`### Claude Desktop`);
 lines.push("");
@@ -171,7 +196,7 @@ lines.push("");
 lines.push(`All ${servers.length} servers, sorted by GitHub stars.`);
 lines.push("");
 lines.push(`<details>`);
-lines.push(`<summary><strong>Show all ${servers.length} servers</strong></summary>`);
+lines.push(`<summary>Show all ${servers.length} servers</summary>`);
 lines.push("");
 lines.push(`| Server | What it does | Stars | Install |`);
 lines.push(`| --- | --- | ---: | --- |`);
@@ -179,7 +204,7 @@ const sorted = [...servers].sort((a, b) => b.stars - a.stars);
 for (const s of sorted) {
   const desc = shortDesc(s.description, s.name);
   const install = s.install_command ? `\`${s.install_command}\`` : "—";
-  lines.push(`| **[${s.name}](${staxServer(s.id)})** | ${escapePipes(desc)} | ${fmtStars(s.stars)} | ${escapePipes(install)} |`);
+  lines.push(`| [${s.name}](${staxServer(s.id)}) | ${escapePipes(desc)} | ${fmtStars(s.stars)} | ${escapePipes(install)} |`);
 }
 lines.push("");
 lines.push(`</details>`);
