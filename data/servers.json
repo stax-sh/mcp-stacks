@@ -3,7 +3,7 @@
   "sources": [
     "https://github.com/mcp"
   ],
-  "count": 97,
+  "count": 98,
   "servers": [
     {
       "id": "microsoft/markitdown",
@@ -844,6 +844,20 @@
         "url": "https://github.com/PagerDuty"
       },
       "icon": "https://avatars.githubusercontent.com/u/766800?v=4"
+    },
+    {
+      "id": "com.xquik/mcp",
+      "name": "Xquik",
+      "description": "Xquik lets agents search tweets, fetch profile timelines and followers, download media, manage monitors and webhooks, and run confirmation-gated tweet and reply workflows.",
+      "github_url": "https://github.com/Xquik-dev/x-twitter-scraper",
+      "homepage": "https://xquik.com",
+      "install_command": "npx -y mcp-remote@0.1.38 https://xquik.com/mcp --header x-api-key:${XQUIK_API_KEY}",
+      "stars": 67,
+      "author": {
+        "name": "Xquik-dev",
+        "url": "https://github.com/Xquik-dev"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/263527900?v=4"
     },
     {
       "id": "io.github.ScrapeGraphAI/scrapegraph-mcp",
