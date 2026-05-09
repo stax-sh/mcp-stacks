@@ -4,7 +4,7 @@ A **stack** is a small bundle of MCP servers tested together for one job.
 
 Copy the install block, paste it into Claude Code, Cursor, or Claude Desktop, ship.
 
-Behind the stacks: a curated directory of 97 servers, each reviewed for security.
+Behind the stacks: a curated directory of 98 servers, each reviewed for security.
 
 [Browse on stax.sh →](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks)
 
@@ -137,10 +137,10 @@ Edit `~/.cursor/mcp.json` with the same shape as the Claude Desktop config above
 
 ## Full directory
 
-All 97 servers, sorted by GitHub stars.
+All 98 servers, sorted by GitHub stars.
 
 <details>
-<summary>Show all 97 servers</summary>
+<summary>Show all 98 servers</summary>
 
 | Server | What it does | Stars | Install |
 | --- | --- | ---: | --- |
@@ -204,6 +204,7 @@ All 97 servers, sorted by GitHub stars.
 | [DeepWiki](https://stax.sh/servers/cognitionai/deepwiki?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Access to AI-generated documentation for public GitHub repositories | 71 | `npx mcp-remote https://mcp.deepwiki.com/sse` |
 | [Sonatype Dependency Management](https://stax.sh/servers/com.sonatype/dependency-management-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Sonatype's open-source intelligence platform: check component versions | 71 | `npx mcp-remote https://mcp.guide.sonatype.com/mcp` |
 | [PagerDuty](https://stax.sh/servers/io.github.PagerDuty/pagerduty-mcp?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | PagerDuty, letting it manage incidents, query on-call schedules | 67 | `uvx pagerduty-mcp` |
+| [Xquik](https://stax.sh/servers/com.xquik/mcp?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Search tweets, fetch profile timelines and followers | 67 | `npx -y mcp-remote@0.1.38 https://xquik.com/mcp --header x-api-key:${XQUIK_API_KEY}` |
 | [ScrapeGraphAI Scrapegraph](https://stax.sh/servers/io.github.ScrapeGraphAI/scrapegraph-mcp?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | ScrapeGraph AI connects an agent to the ScrapeGraph API for web scraping | 66 | `uvx scrapegraph-mcp` |
 | [Codacy](https://stax.sh/servers/codacy/codacy-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Codacy's code analysis platform: surface quality issues | 58 | `npx -y @codacy/codacy-mcp` |
 | [Mapbox MCP Devkit Server](https://stax.sh/servers/io.github.mapbox/mcp-devkit-server?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Mapbox developer APIs: create and manage map styles | 50 | `npx mcp-remote https://mcp-devkit.mapbox.com/mcp` |
@@ -279,4 +280,4 @@ Directory content [MIT](./LICENSE). Each listed server is licensed by its respec
 
 ---
 
-<sub>Maintained by [stax.sh](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) · [★ on GitHub](https://github.com/stax-sh/mcp-stacks) · Last generated 2026-05-07</sub>
+<sub>Maintained by [stax.sh](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) · [★ on GitHub](https://github.com/stax-sh/mcp-stacks) · Last generated 2026-05-09</sub>
