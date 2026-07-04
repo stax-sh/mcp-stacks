@@ -3,7 +3,7 @@
   "sources": [
     "https://github.com/mcp"
   ],
-  "count": 97,
+  "count": 98,
   "servers": [
     {
       "id": "microsoft/markitdown",
@@ -1362,6 +1362,20 @@
         "url": "https://github.com/shipstatic"
       },
       "icon": "https://raw.githubusercontent.com/shipstatic/mcp/main/icon.svg"
+    },
+    {
+      "id": "io.github.AMEOBIUS/opendaw-mcp",
+      "name": "openDAW MCP",
+      "description": "Control a browser-based digital audio workstation from an agent: create tracks, instruments, effects, MIDI patterns, mix with sends and buses, render audio, split stems, and write custom DSP scripts — 263 tools covering the full production pipeline via a Playwright bridge to headless Chromium.",
+      "github_url": "https://github.com/AMEOBIUS/opendaw-mcp",
+      "homepage": "https://pypi.org/project/opendaw-mcp/",
+      "install_command": "uvx opendaw-mcp",
+      "stars": 1,
+      "author": {
+        "name": "AMEOBIUS",
+        "url": "https://github.com/AMEOBIUS"
+      },
+      "icon": "https://avatars.githubusercontent.com/u/207413759?v=4"
     }
   ]
 }
