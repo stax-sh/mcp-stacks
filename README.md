@@ -4,7 +4,7 @@ A **stack** is a small bundle of MCP servers tested together for one job.
 
 Copy the install block, paste it into Claude Code, Cursor, or Claude Desktop, ship.
 
-Behind the stacks: a curated directory of 97 servers, each reviewed for security.
+Behind the stacks: a curated directory of 98 servers, each reviewed for security.
 
 [Browse on stax.sh →](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks)
 
@@ -137,10 +137,10 @@ Edit `~/.cursor/mcp.json` with the same shape as the Claude Desktop config above
 
 ## Full directory
 
-All 97 servers, sorted by GitHub stars.
+All 98 servers, sorted by GitHub stars.
 
 <details>
-<summary>Show all 97 servers</summary>
+<summary>Show all 98 servers</summary>
 
 | Server | What it does | Stars | Install |
 | --- | --- | ---: | --- |
@@ -240,6 +240,7 @@ All 97 servers, sorted by GitHub stars.
 | [Box](https://stax.sh/servers/box/mcp-server-box-remote?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Enterprise content stored in Box: read and search files and folders | 1 | `npx mcp-remote https://mcp.box.com` |
 | [Guru Remote MCP Server](https://stax.sh/servers/com.getguru/mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | A Guru knowledge base: search and retrieve verified answers from cards | 1 | `npx mcp-remote https://mcp.api.getguru.com/mcp` |
 | [Shipbook](https://stax.sh/servers/io.shipbook/mcp?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Shipbook's mobile app logging platform, letting it search production logs | 1 | `npx mcp-remote https://api.shipbook.io/mcp` |
+| [openDAW MCP](https://stax.sh/servers/io.github.AMEOBIUS/opendaw-mcp?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Control a browser-based digital audio workstation from an agent: create | 1 | `uvx opendaw-mcp` |
 | [ShipStatic](https://stax.sh/servers/com.shipstatic/mcp?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) | Deploys static sites instantly from an agent with no account required | 0 | `npx -y @shipstatic/mcp` |
 
 </details>
@@ -279,4 +280,4 @@ Directory content [MIT](./LICENSE). Each listed server is licensed by its respec
 
 ---
 
-<sub>Maintained by [stax.sh](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) · [★ on GitHub](https://github.com/stax-sh/mcp-stacks) · Last generated 2026-05-07</sub>
+<sub>Maintained by [stax.sh](https://stax.sh?utm_source=github&utm_medium=readme&utm_campaign=mcp-stacks) · [★ on GitHub](https://github.com/stax-sh/mcp-stacks) · Last generated 2026-07-04</sub>
